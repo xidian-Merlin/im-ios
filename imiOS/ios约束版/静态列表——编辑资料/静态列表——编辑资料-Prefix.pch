@@ -1,0 +1,20 @@
+//
+// Prefix header for all source files of the '静态列表——编辑资料' target in the '静态列表——编辑资料' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+#ifdef DEBUG
+#define RLog(...) NSLog(__VA_ARGS__)
+#else
+#define RLog(...)
+#endif
