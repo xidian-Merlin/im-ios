@@ -2,8 +2,8 @@
 //  QRCodeScannerViewController.m
 //  QRCodeDemo
 //
-//  Created by yuhui wang on 2016/10/21.
-//  Copyright © 2016年 yuhui wang. All rights reserved.
+//  Created by tongho on 2016/10/21.
+//  Copyright © 2016年 tongho. All rights reserved.
 //
 
 #import "QRCodeScannerViewController.h"

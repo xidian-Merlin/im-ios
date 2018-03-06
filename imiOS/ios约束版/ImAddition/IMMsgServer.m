@@ -2,8 +2,8 @@
 //  IMMsgServer.m
 //  im
 //
-//  Created by yuhui wang on 16/7/30.
-//  Copyright © 2016年 yuhui wang. All rights reserved.
+//  Created by tongho on 16/7/30.
+//  Copyright © 2016年 tongho. All rights reserved.
 //
 
 #import "IMMsgServer.h"
@@ -53,7 +53,6 @@ typedef void(^CheckFailure)(NSError* error);
         NSLog(@"将用户名密码传入数组做参数！");
         LoginAPI* api = [[LoginAPI alloc] init];
         [api requestWithObject:parameter Completion:^(NSArray* response, NSError *error) {
-            
             
             if (!error)
             {

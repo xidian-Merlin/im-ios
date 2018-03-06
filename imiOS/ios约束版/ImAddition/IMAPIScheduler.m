@@ -2,8 +2,8 @@
 //  IMAPIScheduler.m
 //  im
 //
-//  Created by yuhui wang on 16/7/28.
-//  Copyright © 2016年 yuhui wang. All rights reserved.
+//  Created by tongho on 16/7/28.
+//  Copyright © 2016年 tongho. All rights reserved.
 //
 
 #import "IMAPIScheduler.h"
@@ -77,6 +77,7 @@ static NSInteger const timeInterval = 1;
 #pragma mark public
 - (BOOL)registerApi:(id<IMAPIScheduleProtocol>)api
 {
+    
     __block BOOL registSuccess = NO;
     dispatch_sync(self.apiSchedulerQueue, ^{
         if (![api analysisReturnData])
@@ -113,7 +114,7 @@ static NSInteger const timeInterval = 1;
     //    [_timeoutMap setObject:api forKey:[NSDate date]];
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
     dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-        if ([[_apiRequestMap allKeys] containsObject:MAP_REQUEST_KEY(api)])
+        if ([[_apiRequestMap allKeys] containsObject: (api)])
         {
             [[IMSundriesCenter instance] pushTaskToSerialQueue:^{
                 RequestCompletion completion = [(IMSuperAPI*)api completion];

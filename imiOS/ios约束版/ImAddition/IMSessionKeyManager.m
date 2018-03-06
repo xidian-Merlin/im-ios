@@ -2,8 +2,8 @@
 //  IMSessionKeyManager.m
 //  TEST
 //
-//  Created by yuhui wang on 2017/1/12.
-//  Copyright © 2017年 yuhui wang. All rights reserved.
+//  Created by tongho on 2017/1/12.
+//  Copyright © 2017年 tongho. All rights reserved.
 //
 
 #import "IMSessionKeyManager.h"

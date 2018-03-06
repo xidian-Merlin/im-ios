@@ -2,8 +2,8 @@
 //  IMTcpProtocolHeader.h
 //  im
 //
-//  Created by yuhui wang on 16/7/30.
-//  Copyright © 2016年 yuhui wang. All rights reserved.
+//  Created by tongho on 16/7/30.
+//  Copyright © 2016年 tongho. All rights reserved.
 /*  H1 data format:
     protocol version    -- 1 byte   目前为“1”
     encrypt  type       -- 1 byte   1:公钥(登录前) 2:对称(登录后)

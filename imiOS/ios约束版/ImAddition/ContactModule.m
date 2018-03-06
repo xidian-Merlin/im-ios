@@ -2,8 +2,8 @@
 //  UserModule.m
 //  ImAddition
 //
-//  Created by yuhui wang on 16/8/5.
-//  Copyright © 2016年 yuhui wang. All rights reserved.
+//  Created by tongho on 16/8/5.
+//  Copyright © 2016年 tongho. All rights reserved.
 //
 
 #import "ContactModule.h"
@@ -326,7 +326,6 @@
     [addUserResultAPI registerAPIInAPIScheduleReceiveData:^(id object, NSError *error) {
         if (!error)
         {
-            
             short result = [object[0] shortValue];
             NSLog(@"收到添加好友结果为：%d！",result);
             IMUserEntity* user = (IMUserEntity*)object[1];

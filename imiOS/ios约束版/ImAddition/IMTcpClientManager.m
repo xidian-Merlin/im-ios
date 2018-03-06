@@ -2,8 +2,8 @@
 //  IMTcpClientManager.m
 //  im
 //
-//  Created by yuhui wang on 16/7/27.
-//  Copyright © 2016年 yuhui wang. All rights reserved.
+//  Created by tongho on 16/7/27.
+//  Copyright © 2016年 tongho. All rights reserved.
 //
 
 #import "IMTcpClientManager.h"
@@ -77,6 +77,7 @@
     char ipv6[128];
     int error;
     BOOL IS_IPV6 = FALSE;
+    //初始化，c语言中将 块中的前多少个字符赋值为0
     bzero(&ipv4, sizeof(ipv4));
     bzero(&ipv4, sizeof(ipv6));
     
@@ -187,6 +188,9 @@
             if (lastSendBufferLength<1024) {
                 NSLog(@"WRITE - Have a buffer with enough space, appending data to it");
                 [_lastSendBuffer appendData:data];
+                
+              //  [_sendBuffers addObject:_lastSendBuffer];
+                
                 return;
             }
         }
@@ -245,7 +249,7 @@
             //NSLog(@"Event type: EventEndOccured");
             [self p_handleEventEndEncounteredStream:aStream];
             break;
-        case NSStreamEventHasBytesAvailable:
+        case NSStreamEventHasBytesAvailable:     //读取数据
             //NSLog(@"Event type: EventHasBytesAvailable");
             [self p_handleEventHasBytesAvailableStream:aStream];
             break;
@@ -276,7 +280,7 @@
         IMSendBuffer *sendBuffer = [_sendBuffers objectAtIndex:0];
         
         NSInteger sendBufferLength = [sendBuffer length];
-        
+        //空的sendBuffer
         if (!sendBufferLength) {
             if (sendBuffer == _lastSendBuffer) {
                 _lastSendBuffer = nil;

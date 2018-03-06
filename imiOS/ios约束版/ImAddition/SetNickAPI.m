@@ -2,8 +2,8 @@
 //  SetNickAPI.m
 //  ImAddition
 //
-//  Created by yuhui wang on 16/8/6.
-//  Copyright © 2016年 yuhui wang. All rights reserved.
+//  Created by tongho on 16/8/6.
+//  Copyright © 2016年 tongho. All rights reserved.
 //
 
 #import "SetNickAPI.h"

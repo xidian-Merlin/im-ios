@@ -964,8 +964,8 @@
 				4E74216C1E9BBFE300715D2C /* ReplyRequestAPI.m */,
 				4E74216D1E9BBFE300715D2C /* SearchUserAPI.h */,
 				4E74216E1E9BBFE300715D2C /* SearchUserAPI.m */,
-				4E74216F1E9BBFE300715D2C /* SetNickAPI.h */,
 				4E7421701E9BBFE300715D2C /* SetNickAPI.m */,
+				4E74216F1E9BBFE300715D2C /* SetNickAPI.h */,
 			);
 			name = contact;
 			sourceTree = "<group>";

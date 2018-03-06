@@ -3,7 +3,7 @@
 //  ImAddition
 //
 //  Created by yuhui wang on 16/8/4.
-//  Copyright © 2016年 yuhui wang. All rights reserved.
+//  Copyright © 2016年 tongho. All rights reserved.
 //  设置模块：修改密码、设置头像、设置昵称、设置查看权限、更改绑定信息
 
 #import "SettingModule.h"
@@ -41,7 +41,7 @@
     NSLog(@"将用户名密码传入数组做参数！");
     ResetPasswordAPI* api = [[ResetPasswordAPI alloc] init];
     [api requestWithObject:parameter Completion:^(id response, NSError *error) {
-        NSLog(@"判断设置密码结果！");
+        NSLog(@"判断设置密码结果");
         if (!error)
         {
             if([response isEqual: @"ResetSuccess"]){

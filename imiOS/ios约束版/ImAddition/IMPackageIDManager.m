@@ -2,8 +2,8 @@
 //  IMPackageIDManager.m
 //  im
 //
-//  Created by yuhui wang on 16/7/28.
-//  Copyright © 2016年 yuhui wang. All rights reserved.
+//  Created by tongho on 16/7/28.
+//  Copyright © 2016年 tongho. All rights reserved.
 //
 
 #import "IMPackageIDManager.h"
@@ -12,6 +12,8 @@
 {
     uint32_t _packageID;
 }
+
+//单例
 + (instancetype)instance
 {
     static IMPackageIDManager* g_packageIDManager;
